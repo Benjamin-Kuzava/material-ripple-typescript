@@ -25,7 +25,6 @@ export class Ripple {
     return this.z;
   }
 
-  // rect, radius, event
   applyStyles(
     element: HTMLElement,
     color: string,
