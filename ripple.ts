@@ -21,7 +21,6 @@ export class Ripple {
   ): number {
     this.x = clickPointX - offsetX > elementWidth / 2 ? 0 : elementWidth;
     this.y = clickPointY - offsetY > elementHeight / 2 ? 0 : elementHeight;
-    // eslint-disable-next-line prettier/prettier
     this.z = Math.hypot(this.x - (clickPointX - offsetX), this.y - (clickPointY - offsetY));
     return this.z;
   }
@@ -65,7 +64,6 @@ export class Ripple {
     );
   }
 
-  // eslint-disable-next-line prettier/prettier
   create(event: React.MouseEvent<HTMLElement, MouseEvent>, color: string): void {
     const element = event.currentTarget as HTMLElement;
 
